@@ -58,7 +58,7 @@ body {
     font-weight: 400;
 }
 
-/*DESING HOME*/
+/*DESIGN HOME*/
 .corpo, .corpoh, .corpocont, .corposobre {
     background-color: var(--cor-menu);
     width: 95% ;
@@ -68,6 +68,99 @@ body {
     border-radius: 20px;
     text-align: center;
     min-height: 100vh;
+}
+
+.section-wrapper {
+    position: relative;
+    margin-bottom: 2rem; /* Adiciona espaço entre as imagens */
+}
+
+
+
+
+/* CONTANEIRS DE TEXTO */
+.text-container1 {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: var(--cor-textomenu);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: left;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+
+}
+.text-container2 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--cor-textomenu);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: right;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+
+}
+.text-container3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--cor-textomenu);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+
+}
+.text-container4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--cor-textomenu);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+
+}
+.text-container5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--cor-textomenu);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.saiba1, .saiba2, .saiba3, .saiba4 {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 20px;
 }
 
 /* Responsividade */
@@ -82,7 +175,7 @@ body {
         padding: 1rem;
     }
 
-    h1, h2, h4, h5, h6, h7, h8, h9, h10, p3, p4, p5, p6, p7 {
+    h1, h2 {
         position: static;
         margin: 1rem 0;
         text-align: center;
@@ -112,31 +205,30 @@ body {
         margin: 1rem auto;
         font-size: 1rem;
     }
+
+    .text-container {
+        padding: 0.5rem;
+    }
+
+    .text-container h1, .text-container h2, .text-container h4, .text-container h5, .text-container h6 {
+        font-size: 1rem;
+    }
 }
 
 /* Corpo do home */
-.saiba1, .saiba2, .saiba3, .saiba4 {
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 20px;
-    margin-top: -0.3%;
-}
-
 h1 {
     color: var(--cor-textomenu);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Poppins', sans-serif;
-    text-align: center;
     font-weight: bolder;
     font-size: 3rem;
 }
 
-h2, h3, h4, h5, h6, h7, h8, h9, h10 {
+h2{
     color: var(--cor-textomenu);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Poppins', sans-serif;
-    text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 400;
 }
 
@@ -146,7 +238,7 @@ h2, h3, h4, h5, h6, h7, h8, h9, h10 {
         font-size: 2.5rem;
     }
 
-    h2, h3, h4, h5, h6, h7, h8, h9, h10 {
+    h2 {
         font-size: 1.25rem;
     }
 
