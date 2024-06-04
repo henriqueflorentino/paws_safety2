@@ -1,0 +1,191 @@
+/* Configurações de cores do site */
+:root {
+    --cor-fundo: #e0b895;
+    --cor-pag: #f2efec;
+    --cor-menu: #174a61;
+    --cor-textomenu: #f5f5f5;
+    --cor-caixa: #E6D4C4;
+}
+
+/* Definições de estilo */
+body {
+    background-color: var(--cor-fundo);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.menu {
+    width: 100%;
+    background-color: var(--cor-menu);
+    padding: 1.5%;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: var(--cor-textomenu);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 1.25rem;
+    font-weight: 400;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu a {
+    text-decoration: none;
+    margin-right: 1.25rem;
+    color: var(--cor-textomenu);
+}
+
+.menu .pawsafety {
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+.logo, .icone-user {
+    vertical-align: bottom;
+}
+
+.rodape {
+    background-color: var(--cor-menu);
+    color: var(--cor-textomenu);
+    text-align: center;
+    padding: 1%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+/*DESING HOME*/
+.corpo, .corpoh, .corpocont, .corposobre {
+    background-color: var(--cor-menu);
+    width: 95% ;
+    margin: 2% auto;
+    padding: 2%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .menu {
+        text-align: left;
+        padding: 1rem;
+    }
+
+    h1, h2, h4, h5, h6, h7, h8, h9, h10, p3, p4, p5, p6, p7 {
+        position: static;
+        margin: 1rem 0;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .saibamais, .queroajudar, .querocomprar, .queroconhecer, .entrecontato {
+        position: static;
+        margin: 1rem auto;
+        display: block;
+    }
+
+    .contato {
+        width: 80%;
+        height: auto;
+        margin: 1rem auto;
+    }
+
+    .perfil, .perfil2, .perfil3, .fotoloja, .fotoloja2, .fotoloja3, .fotoloja4, .fotoloja5, .fotoloja6, .linkedin, .linkedin2, .linkedin3 {
+        width: 50%;
+        height: auto;
+        top: auto;
+        margin: 1rem auto;
+    }
+
+    p1 {
+        margin: 1rem auto;
+        font-size: 1rem;
+    }
+}
+
+/* Corpo do home */
+.saiba1, .saiba2, .saiba3, .saiba4 {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: -0.3%;
+}
+
+h1 {
+    color: var(--cor-textomenu);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+h2, h3, h4, h5, h6, h7, h8, h9, h10 {
+    color: var(--cor-textomenu);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* Adicionar responsividade para os textos */
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2, h3, h4, h5, h6, h7, h8, h9, h10 {
+        font-size: 1.25rem;
+    }
+
+    .saibamais, .queroajudar, .querocomprar, .queroconhecer, .entrecontato {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    .contato {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .perfil, .perfil2, .perfil3, .fotoloja, .fotoloja2, .fotoloja3, .fotoloja4, .fotoloja5, .fotoloja6, .linkedin, .linkedin2, .linkedin3 {
+        width: 30%;
+        height: auto;
+        top: auto;
+        margin: 1rem auto;
+    }
+
+    p1, p2 {
+        font-size: 1rem;
+        margin: 1rem auto;
+    }
+}
+
+/* Corpo contato */
+.container, .container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contato p {
+    color: #000;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 35%;
+}
