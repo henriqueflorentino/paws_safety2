@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Anunciar - PawsSafety</title>
+    <link rel="stylesheet" href="/site/style.css">
+    <link rel="shortcut icon" href="/img/logo_final_colorido.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Aqui está a barra de navegação da página -->
+    <section class="menu">
+        <a href="/site/home.html" class="pawsafety"> <img src="/img/logo_final_contorno.svg" class="logo">PawsSafety</a>
+        <a href="/site/home.html" class="corrige linha">Home</a>
+        <a href="/site/adotar.html" class="corrige">Adotar</a>
+        <a href="/site/anunciar.html" class="corrige">Anunciar</a>
+        <a href="/site/chat.html" class="corrige">Chat</a>
+        <a href="/site/sobre.html" class="corrige">Sobre</a>
+        <a href="/login/login.html">
+            <img src="/img/user.svg" class="icone-user">
+        </a>
+    </section>
+
+    <!-- Aqui está o formulário para adicionar novos anúncios -->
+    <section class="anunciar-form">
+        <h1>Anunciar um Animal</h1>
+        <form action="/adicionar_anuncio" method="POST">
+            <label for="foto">Foto do Animal:</label>
+            <input type="file" id="foto" name="foto" accept="image/*" required>
+
+            <label for="nome">Nome do Animal:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="raca">Raça do Animal:</label>
+            <input type="text" id="raca" name="raca" required>
+
+            <label for="idade">Idade do Animal:</label>
+            <input type="text" id="idade" name="idade" required>
+
+            <label for="telefone">Telefone para Contato:</label>
+            <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10}" required>
+
+            <label for="descricao">Descrição do Animal:</label>
+            <textarea id="descricao" name="descricao" required></textarea>
+
+            <button type="submit">Anunciar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <section class="rodape">
+        <p>© Todos os direitos reservados a PawsSafety</p>
+    </section>
+</body>
+</html>

@@ -16,6 +16,18 @@ body {
     overflow-x: hidden;
 }
 
+/* Estilo para o link */
+.pawsafety {
+    display: inline-block; /* Para garantir que a margem funcione corretamente */
+}
+
+/* Estilo para a imagem dentro do link */
+.pawsafety img.logo {
+    margin-right: 10px; /* Adiciona margem à direita da imagem */
+    margin-bottom: 3px; /* Subtrai um pouco da margem inferior para mover a imagem para cima */
+}
+
+
 .menu {
     width: 100%;
     background-color: var(--cor-menu);
@@ -75,92 +87,85 @@ body {
     margin-bottom: 2rem; /* Adiciona espaço entre as imagens */
 }
 
-
-
-
 /* CONTANEIRS DE TEXTO */
 .text-container1 {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 25%;
     transform: translate(-50%, -50%);
     color: var(--cor-textomenu);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-align: left;
-    background: rgba(0, 0, 0, 0.5);
     padding: 1rem;
     border-radius: 10px;
-
 }
 .text-container2 {
     position: absolute;
-    top: 55%;
-    left: 50%;
+    top: 45%;
+    left: 38%;
     transform: translate(-50%, -50%);
     color: var(--cor-textomenu);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    text-align: right;
-    background: rgba(0, 0, 0, 0.5);
+    text-align: justify;
     padding: 1rem;
     border-radius: 10px;
-
 }
 .text-container3 {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 46%;
+    left: 35%;
     transform: translate(-50%, -50%);
     color: var(--cor-textomenu);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    text-align: center;
-    background: rgba(0, 0, 0, 0.5);
+    text-align: left;
     padding: 1rem;
     border-radius: 10px;
-
 }
 .text-container4 {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 45%;
+    left: 33%;
     transform: translate(-50%, -50%);
     color: var(--cor-textomenu);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    text-align: center;
-    background: rgba(0, 0, 0, 0.5);
+    text-align: left;
     padding: 1rem;
     border-radius: 10px;
-
 }
 .text-container5 {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 47%;
+    left: 32%;
     transform: translate(-50%, -50%);
     color: var(--cor-textomenu);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    text-align: center;
-    background: rgba(0, 0, 0, 0.5);
+    text-align: left;
+    /*background: rgba(0, 0, 0, 0.5);*/
     padding: 1rem;
     border-radius: 10px;
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .saiba1, .saiba2, .saiba3, .saiba4 {
     width: 100%;
     box-sizing: border-box;
     border-radius: 20px;
+}
+
+/* Botões */
+button {
+    background-color: var(--cor-menu);
+    color: var(--cor-textomenu);
+    border: none;
+    padding: 1rem 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #143848; /* Cor de hover */
 }
 
 /* Responsividade */
@@ -186,6 +191,7 @@ body {
         position: static;
         margin: 1rem auto;
         display: block;
+        padding: 0.75rem 1.5rem; /* Tamanho do botão em tela reduzida */
     }
 
     .contato {
@@ -280,4 +286,115 @@ h2{
     font-weight: 600;
     line-height: normal;
     margin-top: 35%;
+}
+
+/* CSS para a página de anúncios */
+
+/* Container de anúncios */
+.anuncios-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Cada anúncio */
+.anuncio {
+    background-color: var(--cor-caixa);
+    border-radius: 20px;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.anuncio-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.anuncio h2 {
+    color: var(--cor-menu);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.anuncio p {
+    color: var(--cor-menu);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    margin: 0 0 1rem 0;
+}
+
+/* Responsividade para a página de anúncios */
+@media (max-width: 768px) {
+    .anuncio {
+        width: 90%;
+    }
+}
+
+
+/* Adicione o CSS específico para a página de Anunciar aqui */
+
+/* Formulário de Anunciar */
+.anunciar-form {
+    background-color: var(--cor-menu);
+    padding: 2rem;
+    color:var(--cor-textomenu);
+    border-radius: 20px;
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.anunciar-form h1 {
+    color: var(--cor-pag);
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.anunciar-form label {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.anunciar-form input[type="text"],
+.anunciar-form input[type="tel"],
+.anunciar-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: var(--cor-caixa);
+    border: 1px solid #ccc;
+}
+
+.anunciar-form textarea {
+    height: 100px;
+    background-color: var(--cor-caixa);
+}
+
+.anunciar-form button {
+    background-color: var(--cor-pag);
+    color: var(--cor-menu);
+    border: none;
+    padding: 1rem 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.anunciar-form button:hover {
+    background-color: #143848; /* Cor de hover */
 }
