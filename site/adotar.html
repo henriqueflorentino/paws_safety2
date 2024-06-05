@@ -27,7 +27,10 @@
     <!-- Aqui está o corpo da página de anúncios -->
     <section class="corpoh">
         <h1>Anúncios de Adoção</h1>
-        <div class="anuncios-container">
+        <div class="anuncios-container" id="anuncios-container">
+
+            <!-- Os anúncios existentes aqui -->
+        
             <!-- Exemplo de um anúncio -->
             <div class="anuncio">
                 <img src="/img/uno.png" alt="Cachorro" class="anuncio-img">
@@ -90,23 +93,34 @@
 
     <!-- Adicione o script JavaScript no final do corpo HTML -->
     <script>
-        // Obtém o elemento do menu
-        var menu = document.querySelector('.menu');
+        document.addEventListener('DOMContentLoaded', function() {
+            const anunciosContainer = document.getElementById('anuncios-container');
+            const anuncios = JSON.parse(localStorage.getItem('anuncios')) || [];
 
-        // Obtém a posição inicial do menu
-        var menuPos = menu.offsetTop;
-
-        // Adiciona um ouvinte de evento de rolagem
-        window.addEventListener('scroll', function() {
-            // Verifica se a posição de rolagem é maior do que a posição inicial do menu
-            if (window.scrollY > menuPos) {
-                // Adiciona a classe para tornar o menu fixo
-                menu.classList.add('menu-fixo');
-            } else {
-                // Remove a classe se a posição de rolagem for menor do que a posição inicial do menu
-                menu.classList.remove('menu-fixo');
-            }
+            // Exibe os anúncios na página
+            anuncios.forEach(function(anuncio, index) {
+                const novoAnuncioHTML = `
+                    <div class="anuncio">
+                        <img src="${anuncio.fotoURL}" alt="Foto do Animal" class="anuncio-img">
+                        <h2>${anuncio.nome}</h2>
+                        <p>${anuncio.raca}</p>
+                        <p>${anuncio.idade}</p>
+                        <p>${anuncio.email}</p>
+                        <p>${anuncio.descricao}</p>
+                        ${index === anuncios.length - 1 ? `<button onclick="excluirAnuncio(${index})" class="excluir-btn">Excluir</button>` : ''}
+                    </div>
+                `;
+                anunciosContainer.innerHTML += novoAnuncioHTML;
+            });
         });
+
+        // Função para excluir um anúncio
+        function excluirAnuncio(index) {
+            const anuncios = JSON.parse(localStorage.getItem('anuncios')) || [];
+            anuncios.splice(index, 1);
+            localStorage.setItem('anuncios', JSON.stringify(anuncios));
+            location.reload(); // Recarrega a página para refletir as alterações
+        }
     </script>
 </body>
 </html>

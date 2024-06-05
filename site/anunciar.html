@@ -27,25 +27,25 @@
     <!-- Aqui está o formulário para adicionar novos anúncios -->
     <section class="anunciar-form">
         <h1>Anunciar um Animal</h1>
-        <form action="/adicionar_anuncio" method="POST">
+        <form id="animal-form" method="POST">
             <label for="foto">Foto do Animal:</label>
             <input type="file" id="foto" name="foto" accept="image/*" required>
-
+        
             <label for="nome">Nome do Animal:</label>
             <input type="text" id="nome" name="nome" required>
-
+        
             <label for="raca">Raça do Animal:</label>
             <input type="text" id="raca" name="raca" required>
-
+        
             <label for="idade">Idade do Animal:</label>
             <input type="text" id="idade" name="idade" required>
 
-            <label for="telefone">Telefone para Contato:</label>
-            <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10}" required>
-
+            <label for="email">Email para Contato:</label>
+            <input type="email" id="email" name="email" required>
+        
             <label for="descricao">Descrição do Animal:</label>
             <textarea id="descricao" name="descricao" required></textarea>
-
+        
             <button type="submit">Anunciar</button>
         </form>
     </section>
@@ -54,5 +54,59 @@
     <section class="rodape">
         <p>© Todos os direitos reservados a PawsSafety</p>
     </section>
+
+    <!-- Adicione o script JavaScript no final do corpo HTML -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Previne o comportamento padrão do formulário
+
+                // Obtenha os valores dos campos do formulário
+                const fotoInput = document.getElementById('foto');
+                const nome = document.getElementById('nome').value;
+                const raca = document.getElementById('raca').value;
+                const idade = document.getElementById('idade').value;
+                const email = document.getElementById('email').value;
+                const descricao = document.getElementById('descricao').value;
+
+                // Verifica se foi selecionado um arquivo de imagem
+                if (fotoInput.files.length > 0) {
+                    const file = fotoInput.files[0];
+                    const reader = new FileReader();
+
+                    reader.onloadend = function() {
+                        const fotoURL = reader.result;
+
+                        // Obtenha a lista de anúncios da localStorage ou inicialize uma nova lista
+                        const anuncios = JSON.parse(localStorage.getItem('anuncios')) || [];
+
+                        // Crie um novo anúncio
+                        const novoAnuncio = {
+                            fotoURL: fotoURL,
+                            nome: nome,
+                            raca: raca,
+                            idade: idade,
+                            email: email,
+                            descricao: descricao
+                        };
+
+                        // Adicione o novo anúncio à lista de anúncios
+                        anuncios.push(novoAnuncio);
+
+                        // Atualize a lista de anúncios na localStorage
+                        localStorage.setItem('anuncios', JSON.stringify(anuncios));
+
+                        // Redirecione para a página de adoção
+                        window.location.href = '/site/adotar.html';
+                    };
+
+                    reader.readAsDataURL(file);
+                } else {
+                    alert("Por favor, selecione uma imagem.");
+                }
+            });
+        });
+        
+    </script>
 </body>
 </html>
