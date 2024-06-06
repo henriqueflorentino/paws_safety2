@@ -2,13 +2,42 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
     <title>Chat - PawsSafety</title>
     <link rel="stylesheet" href="/site/style.css">
     <link rel="shortcut icon" href="/img/logo_final_colorido.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        /* Adicione o estilo CSS específico para esta página aqui */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Define a altura mínima da página como 100% da altura da viewport */
+        }
+
+        .chat-form {
+            flex-grow: 1; /* Faz com que o formulário ocupe o espaço restante da página */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rodape {
+            flex-shrink: 0; /* Impede que o rodapé seja redimensionado */
+            background-color: var(--cor-menu);
+            color: var(--cor-textomenu);
+            text-align: center;
+            padding: 1%;
+            width: 100%;
+            font-family: 'Poppins', sans-serif;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-size: 1.25rem;
+            font-weight: 400;
+        }
+    </style>
 </head>
 <body>
     <!-- Aqui está a barra de navegação da página -->
@@ -24,36 +53,34 @@
         </a>
     </section>
 
-    <!-- Aqui está o corpo da página de anúncios -->
-    <section class="corpoh">
-        <h1>Chat</h1>
+    <!-- Aqui está o formulário para o chat -->
+    <section class="chat-form">
+        <h1>Converse com o anunciante</h1>
+        <form id="chat-form" method="POST">
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome" required>
         
+            <label for="email">Seu Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="email">Email do anunciante:</label>
+            <input type="email2" id="email2" name="email2" required>
+        
+            <label for="mensagem">Sua Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+        
+            <button type="submit">Enviar Mensagem</button>
+        </form>
     </section>
 
+    <!-- Rodapé -->
     <section class="rodape">
-        <!-- Aqui está o rodapé -->
         <p>© Todos os direitos reservados a PawsSafety</p>
     </section>
 
     <!-- Adicione o script JavaScript no final do corpo HTML -->
     <script>
-        // Obtém o elemento do menu
-        var menu = document.querySelector('.menu');
-
-        // Obtém a posição inicial do menu
-        var menuPos = menu.offsetTop;
-
-        // Adiciona um ouvinte de evento de rolagem
-        window.addEventListener('scroll', function() {
-            // Verifica se a posição de rolagem é maior do que a posição inicial do menu
-            if (window.scrollY > menuPos) {
-                // Adiciona a classe para tornar o menu fixo
-                menu.classList.add('menu-fixo');
-            } else {
-                // Remove a classe se a posição de rolagem for menor do que a posição inicial do menu
-                menu.classList.remove('menu-fixo');
-            }
-        });
+        // Adicione aqui o script JavaScript para lidar com o envio do formulário do chat
     </script>
 </body>
 </html>
