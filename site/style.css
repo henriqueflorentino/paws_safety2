@@ -27,7 +27,6 @@ body {
     margin-bottom: 3px; /* Subtrai um pouco da margem inferior para mover a imagem para cima */
 }
 
-
 .menu {
     width: 100%;
     background-color: var(--cor-menu);
@@ -73,7 +72,7 @@ body {
 /*DESIGN HOME*/
 .corpo, .corpoh, .corpocont, .corposobre {
     background-color: var(--cor-menu);
-    width: 95% ;
+    width: 95%;
     margin: 2% auto;
     padding: 2%;
     box-sizing: border-box;
@@ -81,6 +80,79 @@ body {
     text-align: center;
     min-height: 100vh;
 }
+
+/* Texto sobre */
+.texto-sobre {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    color: var(--cor-textomenu);
+    font-size: 1.25rem;
+    margin: 2rem 0;
+}
+
+/* Estilo para a seção de desenvolvedores */
+.desenvolvedores {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.dev {
+    background-color: var(--cor-caixa);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 1rem;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dev h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: var(--cor-menu);
+    margin-bottom: 1rem;
+}
+
+.dev-image {
+    margin-bottom: 1rem;
+}
+
+.foto-dev {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.icone-linkedin {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .menu {
+        text-align: left;
+        padding: 1rem;
+    }
+
+    .desenvolvedores {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dev {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
 
 .section-wrapper {
     position: relative;
