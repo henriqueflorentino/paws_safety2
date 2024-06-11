@@ -8,13 +8,63 @@ body {
     margin: 0;
 }
 
+.container {
+    display: flex;
+    width: 800px;
+    height: 500px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.left-panel {
+    background-color: #174a61;
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    padding-top: 100px; /* Adiciona margem superior no conteúdo */
+    text-align: center;
+}
+
+.left-panel .logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.left-panel h2 {
+    margin: 0;
+    font-size: 24px;
+    margin-bottom: 20px; /* Adiciona espaçamento abaixo do título */
+}
+
+.left-panel p {
+    font-size: 16px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.right-panel {
+    background-color: #e0b895;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
 .componente {
+    width: 100%;
+    max-width: 300px;
     padding: 20px;
     background-color: #e0b895;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-    width: 300px;
-    border-radius: 0px 0px 8px 8px;
+    border-radius: 8px;
     box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 .componente h1 {
@@ -32,13 +82,13 @@ input[type="text"], input[type="password"] {
     border: 1px solid #f0e6d2;
     border-radius: 4px;
     box-sizing: border-box;
-    font-family: 'Poppins'; /* Fonte Poppins */
-    background-color: #f0e6d2; /* Cor de fundo alterada */
-    outline: none; /* Remove o contorno padrão */
+    font-family: 'Poppins';
+    background-color: #f0e6d2;
+    outline: none;
 }
 
 input[type="text"]:focus, input[type="password"]:focus {
-    outline: 2px solid #d59d6c; /* Adiciona um contorno preto */
+    outline: 2px solid #d59d6c;
 }
 
 button {
@@ -57,10 +107,25 @@ button:hover {
     background-color: #173d4f;
 }
 
-:root {
-    --cor-fundo: #e0b895;
-    --cor-pag: #f2efec;
-    --cor-menu: #174a61;
-    --cor-textomenu: #f5f5f5;
-    --cor-caixa: #E6D4C4;
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 300px;
+    gap: 10px;
+}
+
+.toggle-button, .home-button {
+    width: 48%;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.home-button {
+    background-color: #174a61;
+    color: white;
+}
+
+.home-button:hover {
+    background-color: #173d4f;
 }

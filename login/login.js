@@ -43,6 +43,9 @@ createApp({
                 this.componenteAtual = "ComponenteLogin";
                 this.textoBotao = "Não tenho cadastro";
             }
+        },
+        irParaHome() {
+            window.location.href = "/site/home.html"; // Coloque a URL da sua página inicial aqui
         }
     },
     components: {

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,12 +10,23 @@
 </head>
 <body>
 <div id="app">
-    <button @click="alterarComponentes">{{ textoBotao }}</button>
-
-    <transition name="fade" mode="out-in">
-        <component :is="componenteAtual"></component>
-    </transition>
+    <div class="container">
+        <div class="left-panel">
+            <img src="/img/logo_final_contorno.svg" alt="Paws Safety Logo" class="logo">
+            <h2>Seja bem-vindo(a)!</h2>
+            <p>Para aproveitar todas as funcionalidades do nosso site e manter-se conectado, faça login com suas informações pessoais</p>
+        </div>
+        <div class="right-panel">
+            <transition name="fade" mode="out-in">
+                <component :is="componenteAtual"></component>
+            </transition>
+            <div class="buttons">
+                <button class="toggle-button" @click="alterarComponentes">{{ textoBotao }}</button>
+                <button class="home-button" @click="irParaHome">Voltar para Home</button>
+            </div>
+        </div>
+    </div>
 </div>
+<script src="/login/login.js"></script>
 </body>
 </html>
-<script src="/login/login.js"></script>
