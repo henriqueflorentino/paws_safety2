@@ -4,9 +4,8 @@ const bcrypt = require('bcrypt');
 const session = require('express-session');
 const cors = require('cors');
 const app = express();
-const port = process.env.PORT || 3000; // Use a porta fornecida pelo ambiente de produção
+const port = process.env.PORT || 3000;
 
-// Configuração do banco de dados
 const db = mysql.createConnection({
     host: 'roundhouse.proxy.rlwy.net',
     user: 'root',
@@ -23,7 +22,6 @@ db.connect((err) => {
     console.log('Conectado ao banco de dados MySQL');
 });
 
-// Middleware
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -33,7 +31,6 @@ app.use(session({
     saveUninitialized: true
 }));
 
-// Rotas
 app.post('/register', async (req, res) => {
     const { username, password } = req.body;
     const hashedPassword = await bcrypt.hash(password, 10);
@@ -68,5 +65,4 @@ app.post('/login', (req, res) => {
     });
 });
 
-// Exporta o app para ser usado como uma função serverless no Vercel
 module.exports = app;
