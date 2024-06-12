@@ -7,7 +7,6 @@ A base inicial e funcional do projeto está pronta! Esse modelo porém não est�
 
 ## 📜 Sobre o projeto 
 > Nosso site é O projeto PawsSafety consiste em um ambiente virtual dedicado a apoiar a causa animal e promover a adoção responsável. A ideia surgiu após uma análise realizada pelo nosso grupo, onde percebemos a dificuldade de encontrar animais para adoção de maneira confiável.
-
 > O projeto foi idealizado como uma plataforma para resolver esses problemas. Nela, os usuários podem se cadastrar, listar seus animais para adoção e adotar animais de outros usuários. Isso cria um ecossistema centrado que facilita as adoções e apoia indivíduos interessados em garantir a segurança dos animais durante todo o processo
 
 
