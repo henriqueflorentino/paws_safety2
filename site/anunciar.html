@@ -55,13 +55,13 @@
         <p>© Todos os direitos reservados a PawsSafety</p>
     </section>
 
-    <!-- Adicione o script JavaScript no final do corpo HTML -->
+    <!-- JavaScript -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             document.querySelector('form').addEventListener('submit', function(event) {
                 event.preventDefault(); // Previne o comportamento padrão do formulário
 
-                // Obtenha os valores dos campos do formulário
+                // Valores dos campos do formulário
                 const fotoInput = document.getElementById('foto');
                 const nome = document.getElementById('nome').value;
                 const raca = document.getElementById('raca').value;
@@ -69,7 +69,7 @@
                 const email = document.getElementById('email').value;
                 const descricao = document.getElementById('descricao').value;
 
-                // Verifica se foi selecionado um arquivo de imagem
+                // Verificar se foi selecionado um arquivo de imagem
                 if (fotoInput.files.length > 0) {
                     const file = fotoInput.files[0];
                     const reader = new FileReader();

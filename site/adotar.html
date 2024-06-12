@@ -31,58 +31,57 @@
 
             <!-- Os anúncios existentes aqui -->
         
-            <!-- Exemplo de um anúncio -->
             <div class="anuncio">
                 <img src="/img/uno.png" alt="Cachorro" class="anuncio-img">
                 <h2>Uno</h2>
+                <p>Vira-lata</p>
+            </div>
+            <div class="anuncio">
+                <img src="/img/maya.png" alt="Cachorro" class="anuncio-img">
+                <h2>Maya</h2>
+                <p>Vira-lata</p>
+            </div>
+            <div class="anuncio">
+                <img src="/img/gamora.png" alt="Cachorro" class="anuncio-img">
+                <h2>Gamora</h2>
+                <p>Vira-lata</p>
+            </div>
+            <div class="anuncio">
+                <img src="/img/gato1t.jpg" alt="Gato" class="anuncio-img">
+                <h2>Nina</h2>
                 <p>Sem raça definida</p>
             </div>
             <div class="anuncio">
-                <img src="/img/maya.png" alt="Gato" class="anuncio-img">
-                <h2>Nome do Animal</h2>
-                <p>Raça do Animal</p>
-            </div>
-            <div class="anuncio">
-                <img src="/img/uno.png" alt="Cachorro" class="anuncio-img">
-                <h2>Uno</h2>
+                <img src="/img/coelho1.jpg" alt="Coelho" class="anuncio-img">
+                <h2>Pernalonga</h2>
                 <p>Sem raça definida</p>
             </div>
             <div class="anuncio">
-                <img src="/img/maya.png" alt="Gato" class="anuncio-img">
-                <h2>Nome do Animal</h2>
-                <p>Raça do Animal</p>
-            </div>
-            <div class="anuncio">
-                <img src="/img/uno.png" alt="Cachorro" class="anuncio-img">
-                <h2>Uno</h2>
+                <img src="/img/gato2.jpg" alt="Gato" class="anuncio-img">
+                <h2>Garfield</h2>
                 <p>Sem raça definida</p>
             </div>
             <div class="anuncio">
-                <img src="/img/maya.png" alt="Gato" class="anuncio-img">
-                <h2>Nome do Animal</h2>
-                <p>Raça do Animal</p>
-            </div>
-            <div class="anuncio">
-                <img src="/img/uno.png" alt="Cachorro" class="anuncio-img">
-                <h2>Uno</h2>
+                <img src="/img/hamster1.jpg" alt="Hamster" class="anuncio-img">
+                <h2>Jerry</h2>
                 <p>Sem raça definida</p>
             </div>
             <div class="anuncio">
-                <img src="/img/maya.png" alt="Gato" class="anuncio-img">
-                <h2>Nome do Animal</h2>
-                <p>Raça do Animal</p>
-            </div>
-            <div class="anuncio">
-                <img src="/img/uno.png" alt="Cachorro" class="anuncio-img">
-                <h2>Uno</h2>
+                <img src="/img/ourico.jpg" alt="Ouriço" class="anuncio-img">
+                <h2>Sonic</h2>
                 <p>Sem raça definida</p>
             </div>
             <div class="anuncio">
-                <img src="/img/maya.png" alt="Gato" class="anuncio-img">
-                <h2>Nome do Animal</h2>
-                <p>Raça do Animal</p>
+                <img src="/img/caremelo1.jpg" alt="Cachorro" class="anuncio-img">
+                <h2>Caramelo</h2>
+                <p>Vira-lata</p>
             </div>
-            <!-- Adicione mais anúncios conforme necessário -->
+            <div class="anuncio">
+                <img src="/img/gato3.jpg" alt="Gato" class="anuncio-img">
+                <h2>Tom</h2>
+                <p>Sem raça definida</p>
+            </div>
+            <!-- Adicionar mais anúncios  -->
         </div>
     </section>
 
@@ -91,7 +90,7 @@
         <p>© Todos os direitos reservados a PawsSafety</p>
     </section>
 
-    <!-- Adicione o script JavaScript no final do corpo HTML -->
+    <!--  JavaScript -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const anunciosContainer = document.getElementById('anuncios-container');
@@ -114,7 +113,7 @@
             });
         });
 
-        // Função para excluir um anúncio
+        // Excluir um anúncio
         function excluirAnuncio(index) {
             const anuncios = JSON.parse(localStorage.getItem('anuncios')) || [];
             anuncios.splice(index, 1);
