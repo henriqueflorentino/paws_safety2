@@ -1,4 +1,5 @@
-# <img src="img/capatopo.jpg">
+# ![fundohome](https://github.com/henriqueflorentino/paws_safety2/assets/141787273/d77b8f86-e911-4e66-bd47-53f5592d6a6a)
+
 # PawsSafety 🐾
 
 ## 🌐 Visite o site 
@@ -6,7 +7,7 @@ A base inicial e funcional do projeto está pronta! Esse modelo porém não est�
 > [PawsSafety || Conheça nosso site! ](https://paws-safety.netlify.app/)
 
 ## 📜 Sobre o projeto 
-> Nosso site é O projeto PawsSafety consiste em um ambiente virtual dedicado a apoiar a causa animal e promover a adoção responsável. A ideia surgiu após uma análise realizada pelo nosso grupo, onde percebemos a dificuldade de encontrar animais para adoção de maneira confiável.
+> Nosso site consiste em um ambiente virtual dedicado a apoiar a causa animal e promover a adoção responsável. A ideia surgiu após uma análise realizada pelo nosso grupo, onde percebemos a dificuldade de encontrar animais para adoção de maneira confiável.<br />
 > O projeto foi idealizado como uma plataforma para resolver esses problemas. Nela, os usuários podem se cadastrar, listar seus animais para adoção e adotar animais de outros usuários. Isso cria um ecossistema centrado que facilita as adoções e apoia indivíduos interessados em garantir a segurança dos animais durante todo o processo
 
 
