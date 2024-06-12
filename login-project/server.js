@@ -2,10 +2,11 @@ const express = require('express');
 const mysql = require('mysql2');
 const bcrypt = require('bcrypt');
 const session = require('express-session');
-const cors = require('cors');
+const cors = require('cors'); // Adicione esta linha
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000;
 
+// Configuração do banco de dados
 const db = mysql.createConnection({
     host: 'roundhouse.proxy.rlwy.net',
     user: 'root',
@@ -22,7 +23,8 @@ db.connect((err) => {
     console.log('Conectado ao banco de dados MySQL');
 });
 
-app.use(cors());
+// Middleware
+app.use(cors()); // Adicione esta linha
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(session({
@@ -31,6 +33,7 @@ app.use(session({
     saveUninitialized: true
 }));
 
+// Rotas
 app.post('/register', async (req, res) => {
     const { username, password } = req.body;
     const hashedPassword = await bcrypt.hash(password, 10);
@@ -65,4 +68,6 @@ app.post('/login', (req, res) => {
     });
 });
 
-module.exports = app;
+app.listen(port, () => {
+    console.log(`Servidor rodando em http://localhost:${port}`);
+});
