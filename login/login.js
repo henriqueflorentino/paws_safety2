@@ -17,7 +17,7 @@ const ComponenteLogin = {
     },
     methods: {
         async login() {
-            const response = await fetch('https://paws-safety2.vercel.app/login', { // Alterado para o URL do Vercel
+            const response = await fetch('/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -60,7 +60,7 @@ const ComponenteSignIn = {
                 return;
             }
 
-            const response = await fetch('https://paws-safety2.vercel.app/register', { // Alterado para o URL do Vercel
+            const response = await fetch('/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
