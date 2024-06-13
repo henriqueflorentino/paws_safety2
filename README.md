@@ -3,7 +3,7 @@
 # PawsSafety 🐾
 
 ## 🌐 Visite o site 
-A base funcional do projeto está pronta! Nese modelo implementmos a responsividade, mas caso aconteça algum problema na visualização do site peço para que ajuste o zoom da pagina para que assim consiga ver o resultado esperado.<br />
+A base funcional do projeto está pronta! NesSe modelo implementmos a responsividade, mas caso aconteça algum problema na visualização do site peço para que ajuste o zoom da pagina para que assim consiga ver o resultado esperado.<br />
 > [PawsSafety || Conheça nosso site! ](https://paws-safety.netlify.app/)
 
 ## 🔗 Assista a apresentação do nosso projeto!
