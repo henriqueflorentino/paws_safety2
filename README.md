@@ -40,7 +40,12 @@ Confira o nosso FIGMA, onde aqui idealizamos o formato do nosso site, identidade
 
 ## 🗃️ Apresentando o Banco de Dados
 * ### Projeto e Implementação de Banco de Dados Relacionais (Modelo Conceitual e Modelo Lógico)
+Modelo Conceitual
 
+**`Usuarios`**
+**`id:`** int (chave primária)
+**`username:`** varchar(255)
+**`password:`** varchar(255)
 
 
 ## 💡 Integrantes do projeto
