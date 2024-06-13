@@ -43,9 +43,9 @@ Confira o nosso FIGMA, onde aqui idealizamos o formato do nosso site, identidade
 ### Modelo Conceitual:
 
 **`Usuarios`**
-**`id:`** int (chave primária)
-**`username:`** varchar(255)
-**`password:`** varchar(255)
+* **`id:`** int (chave primária)
+* **`username:`** varchar(255)
+* **`password:`** varchar(255)
 
 ### Modelo Lógico:
 ![image](https://github.com/henriqueflorentino/paws_safety2/assets/94813609/a4534ed9-85a5-449c-bd94-e195725006f5)
@@ -59,15 +59,15 @@ A conexão com o banco de dados MySQL é estabelecida no arquivo **`server.js`**
 * ### 3️⃣ Implementação de CRUD
   
 **`Cadastro de Usuário:`**
-**`Endpoint:`** /register
-**`Método:`** POST
-**`Descrição:`** Recebe um username e password, aplica hash na senha e armazena no banco de dados.
+* **`Endpoint:`** /register
+* **`Método:`** POST
+* **`Descrição:`** Recebe um username e password, aplica hash na senha e armazena no banco de dados.
 ![image](https://github.com/henriqueflorentino/paws_safety2/assets/94813609/fbe4eeef-c4bc-4a9c-831c-837745d67775)
 
 **`Login de Usuário:`**
-**`Endpoint:`** /login
-**`Método:`** POST
-**`Descrição:`** Recebe um username e password, verifica as credenciais e autentica o usuário.
+* **`Endpoint:`** /login
+* **`Método:`** POST
+* **`Descrição:`** Recebe um username e password, verifica as credenciais e autentica o usuário.
 ![image](https://github.com/henriqueflorentino/paws_safety2/assets/94813609/f24f2c86-a5b5-459d-bd17-28f90fe60dc2)
 
 * ### 4️⃣ Configuração de SGBD Integrado com a Solução Desenvolvida
