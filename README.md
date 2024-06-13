@@ -51,11 +51,38 @@ Confira o nosso FIGMA, onde aqui idealizamos o formato do nosso site, identidade
 ![image](https://github.com/henriqueflorentino/paws_safety2/assets/94813609/a4534ed9-85a5-449c-bd94-e195725006f5)
 
 * ### 2️⃣ Aspectos de Programação em Ambiente de Banco de Dados
-> Conexão feita com o Banco de Dados MySQL (Railway + Beekeper Studio)
+> Conexão feita com o Banco de Dados MySQL (Railway + Beekeeper Studio)
 
 A conexão com o banco de dados MySQL é estabelecida no arquivo **`server.js`**:
 ![image](https://github.com/henriqueflorentino/paws_safety2/assets/94813609/cfd73c35-b1da-4dd4-ae8c-c955e0e1b3ae)
 
+* ### 3️⃣ Implementação de CRUD
+  
+**`Cadastro de Usuário:`**
+**`Endpoint:`** /register
+**`Método:`** POST
+**`Descrição:`** Recebe um username e password, aplica hash na senha e armazena no banco de dados.
+![image](https://github.com/henriqueflorentino/paws_safety2/assets/94813609/fbe4eeef-c4bc-4a9c-831c-837745d67775)
+
+**`Login de Usuário:`**
+**`Endpoint:`** /login
+**`Método:`** POST
+**`Descrição:`** Recebe um username e password, verifica as credenciais e autentica o usuário.
+![image](https://github.com/henriqueflorentino/paws_safety2/assets/94813609/f24f2c86-a5b5-459d-bd17-28f90fe60dc2)
+
+* ### 4️⃣ Configuração de SGBD Integrado com a Solução Desenvolvida
+  
+**`Escolha:`** MySQL
+
+> A configuração do banco de dados MySQL no Railway foi feita utilizando as variáveis de ambiente para gerenciar a conexão de maneira segura e eficiente. As informações de conexão foram extraídas e configuradas conforme necessário no projeto. Utilizamos o Beekeeper Studio para vizulizarmos de forma mais prática o BD
+  
+**`Variavies de Ambiente utilizadas:`**
+
+**`MYSQLHOST:`** roundhouse.proxy.rlwy.net
+**`MYSQLUSER:`** root
+**`MYSQLPASSWORD:`** dhuJYWsKfFxvJNYVzxFfSJQDNHBZfmNN
+**`MYSQLDATABASE:`** railway
+**`MYSQLPORT:`** 36373
 
 
 ## 💡 Integrantes do projeto
