@@ -38,6 +38,16 @@ Confira o nosso FIGMA, onde aqui idealizamos o formato do nosso site, identidade
     A tela **`SOBRE`**, tem como função principal reunir os valores e objetivos principais da PawsSafety, onde o usuário pode ficar mais informado e familiarizado com nosso ambiente, além de poder acessar o perfil/contato dos desenvolvedores do projeto;
 
 
+## 🔎 Site em funcionamento:
+
+
+https://github.com/henriqueflorentino/paws_safety2/assets/94813609/3828a394-20a9-45ce-8ed3-8a83e633c0ea
+
+
+
+
+
+
 ## 🗃️ Apresentando o Banco de Dados
 * ### 1️⃣ Projeto e Implementação de Banco de Dados Relacionais (Modelo Conceitual e Modelo Lógico)
 ### Modelo Conceitual:
@@ -83,6 +93,14 @@ A conexão com o banco de dados MySQL é estabelecida no arquivo **`server.js`**
 * **`MYSQLPASSWORD:`** dhuJYWsKfFxvJNYVzxFfSJQDNHBZfmNN
 * **`MYSQLDATABASE:`** railway
 * **`MYSQLPORT:`** 36373
+
+## 📈 Banco em funcionamento:
+
+
+https://github.com/henriqueflorentino/paws_safety2/assets/94813609/a069aa80-3c25-42ae-8ec6-87958f1f39dd
+
+
+
 
 
 ## 💡 Integrantes do projeto
