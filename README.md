@@ -3,7 +3,7 @@
 # PawsSafety 🐾
 
 ## 🌐 Visite o site 
-A base inicial e funcional do projeto está pronta! Esse modelo porém não está responsivo, caso aconteça algum problema na visualização do site peço para que ajuste o zoom da pagina para que assim consiga ver o resultado esperado.<br />
+A base funcional do projeto está pronta! Nese modelo implementmos a responsividade, mas caso aconteça algum problema na visualização do site peço para que ajuste o zoom da pagina para que assim consiga ver o resultado esperado.<br />
 > [PawsSafety || Conheça nosso site! ](https://paws-safety.netlify.app/)
 
 ## 🔗 Assista a apresentação do nosso projeto!
@@ -32,10 +32,10 @@ Confira o nosso FIGMA, onde aqui idealizamos o formato do nosso site, identidade
     A tela **`ANUNCIAR`**, tem como função principal permitir que o usuário anuncie um animal para adoção, onde é necessário preencher as informações do animal;
 * ## Chat
     ![image](https://github.com/henriqueflorentino/paws_safety2/assets/141787273/7f03eb42-577f-4e92-bbdf-62c37307a307)<br />
-    A tela **`CHAT`**, tem como função principal permitir a comunicação entre o usuário que está adotando e o anunciante, isso para tirar dúvidas e obter mais detalhes;
+    A tela **`CHAT`**, tem como função principal permitir a comunicação entre emails, do usuário que está adotando e o anunciante, isso para tirar dúvidas e obter mais detalhes;
 * ## Sobre
     ![image](https://github.com/henriqueflorentino/paws_safety2/assets/141787273/74893136-61f9-4470-9bc8-6e4d2cc4331d)<br />
-    A tela **`SOBRE`**, tem como função principal reunir os valores e obejtivos principais da PawsSafety, onde o usuário pode ficar mais informado e familiarizado com nosso ambiente;
+    A tela **`SOBRE`**, tem como função principal reunir os valores e objetivos principais da PawsSafety, onde o usuário pode ficar mais informado e familiarizado com nosso ambiente, além de poder acessar o perfil/contato dos desenvolvedores do projeto;
 
 
 ## 🗃️ Apresentando o Banco de Dados
@@ -79,10 +79,10 @@ A conexão com o banco de dados MySQL é estabelecida no arquivo **`server.js`**
 **`Variavies de Ambiente utilizadas:`**
 
 **`MYSQLHOST:`** roundhouse.proxy.rlwy.net
-**`MYSQLUSER:`** root
-**`MYSQLPASSWORD:`** dhuJYWsKfFxvJNYVzxFfSJQDNHBZfmNN
-**`MYSQLDATABASE:`** railway
-**`MYSQLPORT:`** 36373
+* **`MYSQLUSER:`** root
+* **`MYSQLPASSWORD:`** dhuJYWsKfFxvJNYVzxFfSJQDNHBZfmNN
+* **`MYSQLDATABASE:`** railway
+* **`MYSQLPORT:`** 36373
 
 
 ## 💡 Integrantes do projeto
