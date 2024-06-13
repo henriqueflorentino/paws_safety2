@@ -39,13 +39,22 @@ Confira o nosso FIGMA, onde aqui idealizamos o formato do nosso site, identidade
 
 
 ## 🗃️ Apresentando o Banco de Dados
-* ### Projeto e Implementação de Banco de Dados Relacionais (Modelo Conceitual e Modelo Lógico)
-Modelo Conceitual
+* ### 1️⃣ Projeto e Implementação de Banco de Dados Relacionais (Modelo Conceitual e Modelo Lógico)
+### Modelo Conceitual:
 
 **`Usuarios`**
 **`id:`** int (chave primária)
 **`username:`** varchar(255)
 **`password:`** varchar(255)
+
+### Modelo Lógico:
+![image](https://github.com/henriqueflorentino/paws_safety2/assets/94813609/a4534ed9-85a5-449c-bd94-e195725006f5)
+
+* ### 2️⃣ Aspectos de Programação em Ambiente de Banco de Dados
+>Conexão feita com o Banco de Dados MySQL (Railway + Beekeper Studio)
+A conexão com o banco de dados MySQL é estabelecida no arquivo **`server.js`**:
+![image](https://github.com/henriqueflorentino/paws_safety2/assets/94813609/cfd73c35-b1da-4dd4-ae8c-c955e0e1b3ae)
+
 
 
 ## 💡 Integrantes do projeto
