@@ -20,7 +20,6 @@ Confira o nosso FIGMA, onde aqui idealizamos o formato do nosso site, identidade
 > [PawsSafety || Conheça nosso FIGMA! ](https://www.figma.com/file/4BZW83YcSUZudV12h0fniL/PawsSafety-Page?type=design&node-id=0-1&mode=design&t=hGjAcsi8cmQYh7lF-0)
 
 ## 🎯 Funcionalidades das telas
-### Projeto e Implementação de Banco de Dados Relacionais (Modelo Conceitual e Modelo Lógico)
 
 * ## Home
     ![image](https://github.com/henriqueflorentino/paws_safety2/assets/141787273/569801eb-38ba-422a-9462-a13b8cd448db)<br />
@@ -40,6 +39,7 @@ Confira o nosso FIGMA, onde aqui idealizamos o formato do nosso site, identidade
 
 
 ## 🗃️ Apresentando o Banco de Dados
+* ### Projeto e Implementação de Banco de Dados Relacionais (Modelo Conceitual e Modelo Lógico)
 
 
 
