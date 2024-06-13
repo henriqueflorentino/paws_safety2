@@ -6,6 +6,11 @@
 A base inicial e funcional do projeto está pronta! Esse modelo porém não está responsivo, caso aconteça algum problema na visualização do site peço para que ajuste o zoom da pagina para que assim consiga ver o resultado esperado.<br />
 > [PawsSafety || Conheça nosso site! ](https://paws-safety.netlify.app/)
 
+## 🔗 Assista a apresentação do nosso projeto!
+Nesse video estamos apresentando o nosso Elevator Pitch + A implementação do site em funcionamento + Demonstração do Banco de Dados.<br />
+> [PawsSafety || Elevator Pitch ](https://www.youtube.com/watch?v=aoKoGreTEEQ)
+
+
 ## 📜 Sobre o projeto 
 > Nosso site consiste em um ambiente virtual dedicado a apoiar a causa animal e promover a adoção responsável. A ideia surgiu após uma análise realizada pelo nosso grupo, onde percebemos a dificuldade de encontrar animais para adoção de maneira confiável.<br />
 > O projeto foi idealizado como uma plataforma para resolver esses problemas. Nela, os usuários podem se cadastrar, listar seus animais para adoção e adotar animais de outros usuários. Isso cria um ecossistema centrado que facilita as adoções e apoia indivíduos interessados em garantir a segurança dos animais durante todo o processo.
@@ -15,6 +20,7 @@ Confira o nosso FIGMA, onde aqui idealizamos o formato do nosso site, identidade
 > [PawsSafety || Conheça nosso FIGMA! ](https://www.figma.com/file/4BZW83YcSUZudV12h0fniL/PawsSafety-Page?type=design&node-id=0-1&mode=design&t=hGjAcsi8cmQYh7lF-0)
 
 ## 🎯 Funcionalidades das telas
+### Projeto e Implementação de Banco de Dados Relacionais (Modelo Conceitual e Modelo Lógico)
 
 * ## Home
     ![image](https://github.com/henriqueflorentino/paws_safety2/assets/141787273/569801eb-38ba-422a-9462-a13b8cd448db)<br />
@@ -31,6 +37,11 @@ Confira o nosso FIGMA, onde aqui idealizamos o formato do nosso site, identidade
 * ## Sobre
     ![image](https://github.com/henriqueflorentino/paws_safety2/assets/141787273/74893136-61f9-4470-9bc8-6e4d2cc4331d)<br />
     A tela **`SOBRE`**, tem como função principal reunir os valores e obejtivos principais da PawsSafety, onde o usuário pode ficar mais informado e familiarizado com nosso ambiente;
+
+
+## 🗃️ Apresentando o Banco de Dados
+
+
 
 ## 💡 Integrantes do projeto
 
